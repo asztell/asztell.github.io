@@ -1,0 +1,460 @@
+/*
+ * Author: Arpad Asztalos
+ *
+ * Project Name: Junior Portfolio
+ * Version: 1.0
+ * Date: 07-10-2016
+ * URL: 
+ */
+
+
+/* ==========================================================================
+   Base Styles, Bootstrap Modifications & Fonts Import
+   ========================================================================== */
+
+@import url('http://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+
+::-moz-selection {
+    background: #f2c2c9;
+    color: #a4003a;
+    text-shadow: none;
+}
+
+::selection {
+    background: #16a085;
+    color: #a4003a;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.centered {
+	text-align: center
+}
+
+.mt {
+	margin-top: 80px;
+}
+
+.mb {
+	margin-bottom: 80px;
+}
+
+.well {
+	background-color: transparent;
+	border: none;
+}
+
+/* .well:first-child {
+	text-decoration: underline;
+	color: lightgreen;
+}
+ */
+/* ==========================================================================
+   General styles
+   ========================================================================== */
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+	background: url('../img/work.jpg') no-repeat center center;
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+   -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+    color: #4a4a4a;
+}
+
+ul {
+	list-style-type: circle;
+	color: white;
+}
+
+.navbar-brand {
+	font-weight: 700;
+}
+
+.navbar-default .navbar-brand {
+	color: white;
+}
+
+.navbar-default {
+	background-color: transparent;
+	/* background-color: #000; */
+    background: rgb(33, 33, 33); /* Fallback for older browsers without RGBA-support */
+    background: rgba(33, 33, 33, 0.6);
+	border-color: transparent;
+}
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+	color: white;
+	background-color: transparent;
+	/* background-color: #000; */
+	border-bottom: 2px solid white
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: white;
+}
+
+.navbar-header img {
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	margin-top: 2px;
+}
+
+.navbar-collapse img {
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	margin-top: -13px;
+	margin-bottom: -13px;
+}
+
+#resume {
+	/* a{ */
+	color: lightgreen !important;
+}
+
+#code {
+	/* a{ */
+	color: lightblue !important;
+}
+
+#pad {
+	/* width: 10px; */
+	display: inline;
+	opacity: 0;
+}
+
+.skills-header {
+	text-decoration: underline;
+}
+
+/* ==========================================================================
+   Wrap Sections
+   ========================================================================== */
+
+#about h1 {
+	font-size: 70px;
+	color: #ddd;
+	padding-top: 150px;
+}
+
+#about h3 {
+	color: #fff;
+}
+
+#about {
+	background: none;
+	/* margin-top: -220px; */
+	/* height: 100vh; */
+}
+
+#contact {
+	/* height: 100vh; */
+	margin-top: 200px;
+	background-color: transparent;
+}
+
+::-webkit-input-placeholder {
+   color: white !important;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: white !important;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: white !important;
+}
+
+:-ms-input-placeholder {  
+   color: white !important;
+}
+
+input[placeholder], [placeholder], *[placeholder] {
+   color: white;
+}
+
+::placeholder {
+	color: white;
+}
+
+#section_header {
+	color: #f46e42;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+#contact #submit,
+#contact textarea,
+#contact input {
+	/* background-color: #c8c8c8; */
+	/* opacity: .5; */
+	color: white;
+    background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+    background: rgba(204, 204, 204, 0.6);
+    border: none;
+}
+
+#headerwrap {
+/*	background: url(../img/back.jpg) no-repeat center top;*/
+	/* background: url('../img/mountain_small-village_lake.jpg') no-repeat center top; */
+	/*background: url(../img/ws_Monochrome_Nature_1920x1200.jpg) no-repeat center top;*/
+	margin-top: 0px;
+	padding-top: 100px;
+	text-align:center;
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	min-height: 400px;
+	width: 100%;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#headerwrap h1 {
+	color: #c8c8c8;
+	/* padding-top: 10px; */
+	padding-bottom: 20px;
+	letter-spacing: 4px;
+	font-size: 80px;
+	font-weight: bold;
+}
+
+#headerwrap h4 {
+	font-weight: 400;
+	color: #ffffff
+}
+
+#headerwrap h1 strong {
+	color: #000;
+	opacity: .7;
+}
+
+.work-description {
+	margin-top: 30px;
+}
+
+.work-description h4 {
+	padding-top: 10px;
+	text-align: left;
+	text-decoration: underline;
+}
+
+.work-description h3 {
+	/* color: #c8c8c8; */
+	/* color: #12c94c; */
+	color: lightgreen;
+}
+
+.work-description ul {
+	text-align: left;
+	padding-top: 10px;
+}
+
+#social {
+	margin-top: 150px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: transparent;
+}
+
+#social i {
+	font-size: 40px;
+	color: #c8c8c8;
+}
+
+#social i:hover {
+	color: #1abc9c;
+}
+
+#footerwrap {
+	padding-top: 70px;
+	padding-bottom: 50px;
+	/* background-color: #2f2f2f; */
+	background-color: transparent;
+}
+
+#footerwrap p {
+	color: #f2f2f2;
+	margin-left: 10px;
+}
+
+#footerwrap h4 {
+	color: #c8c8c8;
+}
+
+#r_pod {
+	color: lightgreen;
+}
+
+#ucla {
+	color: yellow;
+	background-color: #3e99fa;
+}
+
+#workwrap {	
+	/* background: url('../img/work.jpg') no-repeat center top; */
+	margin-top: -70px;
+	padding-top: 250px;
+	text-align:center;
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	min-height: 850px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#workwrap h1 {
+	color:#ffffff;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	letter-spacing: 4px;
+	font-size: 80px;
+	font-weight: bold;
+}
+
+#workwrap h4 {
+	font-weight: 400;
+	color: #ffffff;
+}
+
+.websites iframe {
+/*     -ms-zoom: 0.75;
+    zoom: 	0.75;
+    -moz-transform: scale(0.75);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.75);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.75);
+    -webkit-transform-origin: 0 0;
+ */    width: 830px;
+	height: 600px;
+}
+
+@media (max-width: 767px) and (min-width: 480px) {
+	iframe {
+		width: 480px !important;
+		height: 600px !important;
+	}
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+	iframe {
+		width: 750px !important;
+		height: 700px !important;
+	}
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+	iframe {
+		width: 730px !important;
+		height: 700px !important;
+	}
+}
+
+#aboutwrap {
+	/*background: url(../img/about.jpg) no-repeat center top;*/
+	/* background: url('../img/folio_collage.jpg') no-repeat center top; */
+	margin-top: -70px;
+	padding-top: 250px;
+	text-align:center;
+	/* background-attachment: relative; */
+	/* background-position: center center; */
+	/* min-height: 550px; */
+	/* width: 100%; */
+	
+    /* -webkit-background-size: 100%; */
+    /* -moz-background-size: 100%; */
+    /* -o-background-size: 100%; */
+    /* background-size: 100%; */
+
+    /* -webkit-background-size: cover; */
+    /* -moz-background-size: cover; */
+    /* -o-background-size: cover; */
+    /* background-size: cover; */
+}
+
+#contactwrap {
+	/*background: url(../img/about.jpg) no-repeat center top;*/
+	background: url(../img/modern_desk_w_filter1.jpg) no-repeat center top;
+	margin-top: -70px;
+	padding-top: 250px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 550px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+
+/* Gallery */
+.gallery {
+	margin-top: 30px;
+}
+
+.gallery img:hover {
+	opacity: 0.4;
+}
