@@ -4,7 +4,7 @@
  * Project Name: Junior Portfolio
  * Version: 1.0
  * Date: 07-10-2016
- * URL: 
+ * URL:
  */
 
 
@@ -53,7 +53,8 @@
 }
 
 .well {
-	background-color: transparent;
+	background-color:transparent;
+  /*opacity: .3;*/
 	border: none;
 }
 
@@ -114,8 +115,8 @@ ul {
 	border-color: transparent;
 }
 
-.navbar-default .navbar-nav > .active > a, 
-.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
 	color: white;
 	background-color: transparent;
@@ -200,7 +201,7 @@ ul {
    color: white !important;
 }
 
-:-ms-input-placeholder {  
+:-ms-input-placeholder {
    color: white !important;
 }
 
@@ -334,7 +335,7 @@ input[placeholder], [placeholder], *[placeholder] {
 	background-color: #3e99fa;
 }
 
-#workwrap {	
+#workwrap {
 	/* background: url('../img/work.jpg') no-repeat center top; */
 	margin-top: -70px;
 	padding-top: 250px;
@@ -344,7 +345,7 @@ input[placeholder], [placeholder], *[placeholder] {
 	background-repeat: no-repeat;
 	min-height: 850px;
 	width: 100%;
-	
+
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -414,7 +415,7 @@ input[placeholder], [placeholder], *[placeholder] {
 	/* background-position: center center; */
 	/* min-height: 550px; */
 	/* width: 100%; */
-	
+
     /* -webkit-background-size: 100%; */
     /* -moz-background-size: 100%; */
     /* -o-background-size: 100%; */
@@ -436,7 +437,7 @@ input[placeholder], [placeholder], *[placeholder] {
 	background-position: center center;
 	min-height: 550px;
 	width: 100%;
-	
+
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
