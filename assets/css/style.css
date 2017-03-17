@@ -458,7 +458,7 @@ input[placeholder], [placeholder], *[placeholder] {
     -webkit-transform: scale(0.75);
     -webkit-transform-origin: 0 0;
  */    width: 830px;
-	height: 600px;
+	height: 690px;
 }
 
 @media (max-width: 767px) and (min-width: 480px) {
