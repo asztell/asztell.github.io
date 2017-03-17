@@ -1,7 +1,7 @@
 /*
  * Author: Arpad Asztalos
  *
- * Project Name: Junior Portfolio
+ * Project Name: Portfolio
  * Version: 1.0
  * Date: 07-10-2016
  * URL:
@@ -14,6 +14,27 @@
 
 @import url('http://fonts.googleapis.com/css?family=Montserrat:400,700');
 
+@font-face {
+  font-family: 'MyWebFont';
+  /*src: url('../fonts/Moon-Light.eot'); /* IE9 Compat Modes */*/
+  /*src: url('../fonts/Moon-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */*/
+       /*url('../fonts/Moon-Light.woff2') format('woff2'), /* Super Modern Browsers */*/
+       /*url('../fonts/Moon-Light.woff') format('woff'), /* Pretty Modern Browsers */*/
+       /*url('../fonts/Moon-Light.ttf')  format('truetype'), /* Safari, Android, iOS */*/
+       /*url('../fonts/Moon-Light.svg#svgFontName') format('svg'); /* Legacy iOS */*/
+
+  src: url('../fonts/JosefinSans.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/JosefinSans.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('../fonts/JosefinSans.woff2') format('woff2'), /* Super Modern Browsers */
+      url('../fonts/JosefinSans.woff') format('woff'), /* Pretty Modern Browsers */
+      url('../fonts/JosefinSans.ttf')  format('truetype'), /* Safari, Android, iOS */
+      url('../fonts/JosefinSans.svg#svgFontName') format('svg'); /* Legacy iOS */
+
+}
+
+body {
+  font-family: 'MyWebFont', Fallback, sans-serif;
+}
 
 ::-moz-selection {
     background: #f2c2c9;
@@ -66,10 +87,41 @@
 /* ==========================================================================
    General styles
    ========================================================================== */
+/*img{border:1px solid white;}*/
 
+.content:before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  display: block;
+  background: url('../img/work.jpg') no-repeat center center;
+  background-size: cover;
+  /*background-color: #fff;*/
+  width: 100%;
+  height: 100%;
+
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+}
+
+.content {
+  overflow: auto;
+  position: relative;
+  /*left: 0;
+  right: 0;
+  z-index: 9999;*/
+  /*margin-left: 20px;
+  margin-right: 20px;*/
+}
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    /*font-family: 'Montserrat', sans-serif;*/
     font-weight: 400;
     font-size: 16px;
 	background: url('../img/work.jpg') no-repeat center center;
@@ -87,11 +139,31 @@ body {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;}
+    background-size: cover;
+
+    /*-webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);*/
+}
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
     color: #4a4a4a;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 25px;
+}
+
+h5 {
+  font-size: 21px;
+  color: white;
 }
 
 ul {
@@ -183,6 +255,10 @@ ul {
 	/* height: 100vh; */
 }
 
+.about-text {
+  /*font-family: 'Montserrat', sans-serif;*/
+}
+
 #contact {
 	/* height: 100vh; */
 	margin-top: 200px;
@@ -217,6 +293,7 @@ input[placeholder], [placeholder], *[placeholder] {
 	color: #f46e42;
 	text-align: center;
 	margin-bottom: 50px;
+  font-size: 50px;
 }
 
 #contact #submit,
